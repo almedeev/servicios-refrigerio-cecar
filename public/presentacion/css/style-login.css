@@ -1,0 +1,91 @@
+body {
+    background: url("../../assets/imgs/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between; /* mejor centrado */
+    align-items: center;
+    color: #FFFFFF;
+    height: 100vh;   /* 🔥 ocupa toda la pantalla */
+    margin: 0;       /* 🔥 elimina espacios del navegador */     
+    
+    & .logo-cecar{
+        margin-left: 100px;
+    }
+
+    & .login-box {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(12px);
+        padding: 30px;
+        margin-right: 100px;
+        border-radius: 10px;
+        width: 450px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+        & .form-informacion {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                    
+            & .btn-enviar {
+                width: 200px;
+                margin-top: 10px;
+                padding: 12px;
+                background: linear-gradient(135deg, #ffd000, #ffb700);
+                color: #333;
+                font-weight: bold;
+                cursor: pointer;
+                transition: 0.3s;
+                border: none;
+                border-radius: 5px;
+
+                &:hover{
+                    transform: scale(1.05);
+                    box-shadow: 0 5px 15px rgba(255, 208, 0, 0.5);
+                }
+            }
+                    
+            & .olvidaste-clave {
+                margin-top: 20px;
+                color: #cdebdc;
+                text-decoration: none;
+                        
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }   
+    }   
+
+    & h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    & .input-form {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+    }
+
+    & .error {
+        color: #FFCCCC;
+        text-align: center;
+    }        
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+  }
+}
+

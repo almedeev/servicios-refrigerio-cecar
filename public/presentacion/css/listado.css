@@ -1,0 +1,81 @@
+h2{
+    color: #fff;
+}
+
+.btn-editar, .btn-eliminar {
+    padding: 0.3rem 0.8rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    margin: 2px;
+}
+.btn-editar{
+    background: #2563eb;
+    color: white;
+}
+.btn-editar:hover{ 
+    background: #1d4ed8;
+}
+.btn-eliminar{ 
+    background: #dc2626;
+    color: white;
+}
+.btn-eliminar:hover{
+    background: #b91c1c;
+}
+.estado-badge{
+    display: inline-block;
+    padding: 0.2rem 0.7rem;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.estado-pendiente{
+    background: #fef3c7;
+    color: #92400e;
+}
+.estado-en-revisión{
+    background: #fceba6;
+    color: #efc30f;
+}
+.estado-aprobada{
+    background: #d1fae5;
+    color: #065f46;
+}
+.estado-rechazada{
+    background: #fee2e2;
+    color: #991b1b;
+}
+table{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+}
+
+thead tr{
+    background: #1e3a5f;
+    color: white;
+}
+
+.tr-head:hover{
+    color: black;
+}
+
+tbody tr:nth-child(even){
+    background: #ffffffd8; 
+}
+
+tbody tr{
+    background: #e0f2fe70;
+}
+
+tr:hover{
+    background: #f8fafc;
+}
+th, td{
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border: 1px solid #e2e8f0;
+}

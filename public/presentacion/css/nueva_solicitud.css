@@ -1,0 +1,465 @@
+/* 🔥 GLASS + BACKGROUND PRO */
+body {
+    min-height: 100vh;
+    background: #0B5D3B;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .logo img {
+        height: 80px;
+    }
+
+    & .menu {
+        display: flex;
+        text-decoration: none;
+        font-weight: 500;
+        gap: 25px;
+
+        & .menu-option {
+
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            & img {
+                user-select: none;
+            }
+
+            & a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+
+    & .logout {
+        position: unset;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        gap: 15px;
+        background: transparent;
+        text-decoration: none;
+        font-size: 14px;
+        transition: all 0.3s ease;
+        border: 1px solid #ffc107;
+        padding: 8px 15px;
+        border-radius: 8px;
+        color: #ffc107;
+    
+        &:hover {
+            background: #ffc107;
+            transform: scale(1.1);
+            color: #fff;
+            font-weight: bold;
+         }
+    }
+}
+
+.layout {
+    display: flex;
+    align-items: flex-start;
+
+    & .left-panel-header {
+        display: flex;
+        gap: 20px;
+
+        & .left-panel-icon {
+            margin-top: 40px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #245f24;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            ;
+
+            & img {
+                width: 80px;
+            }
+        }
+    }
+
+    & .left-panel {
+        width: 600px;
+        margin-left: 40px;
+
+        & .icon-container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            margin-top: 50px;
+            text-align: center;
+            display: flex;
+
+            & .icon {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                animation: cambiar 9s infinite;
+                filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.3));
+
+            }
+
+            & .icon1 {
+                animation-delay: 0s;
+            }
+
+            & .icon2 {
+                animation-delay: 3s;
+            }
+
+
+            & .icon3 {
+                animation-delay: 6s;
+            }
+        }
+
+        & .left-panel-h1 {
+            font-size: 50px;
+            color: #fff;
+
+            & .left-panel-span {
+                color: #ffd600;
+            }
+        }
+
+        & .left-panel-description {
+            color: #fff;
+        }
+    }
+}
+
+/* TARJETA GLASS */
+.form-card {
+    height: auto;
+    min-height: fit-content;
+    font-family: Poppins, sans-serif;
+    background: #fff;
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-right: 40px;
+    margin-left: auto;
+    padding: 30px;
+    width: 420px;
+    max-width: 90vw;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    animation: fadeUp 0.6s ease;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* HEADER */
+.form-header {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+
+    & .form-header-icon {
+        width: 55px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #245f24;
+        border-radius: 50%;
+
+        & img {
+            width: 45px;
+        }
+    }
+
+    & .form-header-text h2 {
+        margin: 0;
+        font-size: 22px;
+        color: #245f24;
+    }
+
+    & .form-header-text p {
+        margin-top: 5px;
+        color: #565656;
+        font-size: 13px;
+    }
+}
+
+/* INPUT GROUP */
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+
+    & .input-group-icon {
+        width: 42px;
+        height: 42px;
+        background-color: #228e3936;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & img {
+            width: 22px;
+        }
+    }
+}
+
+.input-group label {
+    font-size: 15px;
+    opacity: 0.8;
+    color: #245f24;
+    font-weight: bold;
+    width: 100%;
+}
+
+/* INPUT CON ICONO */
+.input-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-top: 8px;
+    transition: 0.3s;
+}
+
+.input-form .prefix {
+    font-size: 14px;
+    color: #245f24;
+    font-weight: bold;
+    margin-right: 6px;
+    user-select: none;
+}
+
+/* INPUTS */
+.input-form input,
+.input-form select,
+.input-form textarea {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #a5a5a5;
+    width: 100%;
+
+    &:valid {
+        color: #000;
+    }
+}
+
+/* PLACEHOLDER */
+::placeholder {
+    color: rgba(0, 0, 0, 0.421);
+}
+
+/* FOCUS */
+.input-form:focus-within {
+    background: rgba(0, 255, 150, 0.15);
+    box-shadow: 0 0 10px rgba(0, 255, 150, 0.3);
+}
+
+/* TEXTAREA */
+.textarea textarea {
+    height: 80px;
+    resize: none;
+}
+
+/* FILE CUSTOM */
+.file-input {
+    border: 1px solid rgb(127, 127, 127);
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.file-input input {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.file-input span {
+    color: rgba(0, 0, 0, 0.421);
+    font-size: 13px;
+}
+
+.optional{
+    color: #9191919f;
+    font-size: 10px;   
+}
+
+/* BOTÓN */
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(135deg, #d4c21f, #f5e663);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #245f24;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(212, 194, 31, 0.6);
+}
+
+.btn-secondary {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border-radius: 12px;
+    border: 2px solid #245f24;
+    background: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #245f24;
+}
+
+.btn-secondary:hover {
+    background: #245f24;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(36, 95, 36, 0.3);
+}
+
+/* MENSAJE */
+#mensaje {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* CONTENEDOR */
+#formSolicitud {
+    position: relative;
+    overflow: hidden;
+}
+
+/* STEPS SUPERPUESTOS */
+.step {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.4s ease;
+
+    pointer-events: none;
+    visibility: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* ACTIVO */
+.step.active {
+    position: relative;
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+    visibility: visible;
+}
+
+/* SALIDA */
+.step.exit-left {
+    transform: translateX(-50px);
+    opacity: 0;
+}
+
+.step.exit-right {
+    transform: translateX(50px);
+    opacity: 0;
+}
+
+select option[disabled] {
+    color: rgba(0, 0, 0, 0.421);
+}
+
+select option {
+    color: #000;
+    background: #fff;
+}
+
+select:required:invalid {
+    color: rgba(0, 0, 0, 0.421);
+}
+
+select:valid {
+    color: #000;
+}
+
+
+/* ANIMACIÓN */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes cambiar {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
